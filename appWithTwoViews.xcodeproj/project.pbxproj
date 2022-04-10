@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A9AD2F0C2802D9AE00C27FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */; };
 		A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */; };
-		A9AD2F102802D9AE00C27FCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0F2802D9AE00C27FCD /* ViewController.swift */; };
 		A9AD2F132802D9AE00C27FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD2F112802D9AE00C27FCD /* Main.storyboard */; };
 		A9AD2F152802D9B000C27FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AD2F142802D9B000C27FCD /* Assets.xcassets */; };
 		A9AD2F182802D9B000C27FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD2F162802D9B000C27FCD /* LaunchScreen.storyboard */; };
+		A9AD2F202802DDB800C27FCD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */; };
+		A9AD2F222802DDC900C27FCD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9AD2F082802D9AE00C27FCD /* appWithTwoViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appWithTwoViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9AD2F0F2802D9AE00C27FCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9AD2F122802D9AE00C27FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9AD2F142802D9B000C27FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9AD2F172802D9B000C27FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AD2F192802D9B000C27FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */,
 				A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */,
-				A9AD2F0F2802D9AE00C27FCD /* ViewController.swift */,
 				A9AD2F112802D9AE00C27FCD /* Main.storyboard */,
 				A9AD2F142802D9B000C27FCD /* Assets.xcassets */,
 				A9AD2F162802D9B000C27FCD /* LaunchScreen.storyboard */,
 				A9AD2F192802D9B000C27FCD /* Info.plist */,
+				A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */,
+				A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */,
 			);
 			path = appWithTwoViews;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9AD2F102802D9AE00C27FCD /* ViewController.swift in Sources */,
+				A9AD2F202802DDB800C27FCD /* LoginViewController.swift in Sources */,
+				A9AD2F222802DDC900C27FCD /* WelcomeViewController.swift in Sources */,
 				A9AD2F0C2802D9AE00C27FCD /* AppDelegate.swift in Sources */,
 				A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
