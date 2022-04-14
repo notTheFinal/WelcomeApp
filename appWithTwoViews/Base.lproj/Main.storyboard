@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P94-Fq-c5u">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,41 +13,41 @@
             <objects>
                 <viewController id="aPc-Bo-h87" customClass="LoginViewController" customModule="appWithTwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ek-cp-whP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Rer-z5-Tl2">
-                                <rect key="frame" x="28.5" y="330.5" width="357" height="235.5"/>
+                                <rect key="frame" x="29.333333333333343" y="345.33333333333331" width="369.33333333333326" height="235.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x34-Ej-W7x">
-                                        <rect key="frame" x="18" y="0.0" width="321" height="34"/>
+                                        <rect key="frame" x="24.333333333333343" y="0.0" width="321" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="226-lg-fbq">
-                                        <rect key="frame" x="18" y="66" width="321" height="34"/>
+                                        <rect key="frame" x="24.333333333333343" y="66" width="321" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqI-t2-2sr">
-                                        <rect key="frame" x="137.5" y="132" width="82" height="40.5"/>
+                                        <rect key="frame" x="143.66666666666666" y="132" width="82" height="40.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                         </buttonConfiguration>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="USY-hQ-NUL">
-                                        <rect key="frame" x="0.0" y="204.5" width="357" height="31"/>
+                                        <rect key="frame" x="6.3333333333333428" y="204.33333333333331" width="356.66666666666663" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aF-Yv-aKD">
-                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9e-Ry-SVj">
-                                                <rect key="frame" x="207.5" y="0.0" width="149.5" height="31"/>
+                                                <rect key="frame" x="207.33333333333331" y="0.0" width="149.33333333333331" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -81,15 +81,45 @@
             <objects>
                 <viewController id="MZ1-tQ-RXi" customClass="WelcomeViewController" customModule="appWithTwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g2L-7d-Vwt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz7-US-K0h">
+                                <rect key="frame" x="166" y="664" width="96" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-0M-IOs">
+                                <rect key="frame" x="105" y="184" width="218" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="48" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-8G-JNi">
+                                <rect key="frame" x="162" y="264" width="104" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RzJ-Ev-WMe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43125003576278687" green="0.48700982332229614" blue="0.90588241815567017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tz7-US-K0h" firstAttribute="centerX" secondItem="RzJ-Ev-WMe" secondAttribute="centerX" id="74K-uA-Ui8"/>
+                            <constraint firstItem="RzJ-Ev-WMe" firstAttribute="bottom" secondItem="Tz7-US-K0h" secondAttribute="bottom" constant="187" id="Uyj-Qp-jJT"/>
+                            <constraint firstItem="XFr-8G-JNi" firstAttribute="centerX" secondItem="RzJ-Ev-WMe" secondAttribute="centerX" id="gj2-Gz-Nak"/>
+                            <constraint firstItem="kZ1-0M-IOs" firstAttribute="centerX" secondItem="RzJ-Ev-WMe" secondAttribute="centerX" id="pfD-ac-EV9"/>
+                            <constraint firstItem="XFr-8G-JNi" firstAttribute="top" secondItem="kZ1-0M-IOs" secondAttribute="bottom" constant="44" id="wOR-IO-bft"/>
+                            <constraint firstItem="kZ1-0M-IOs" firstAttribute="top" secondItem="RzJ-Ev-WMe" secondAttribute="top" constant="140" id="yZL-fQ-jig"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bX-6Z-ycj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797.1014492753625" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1795.7943925233644" y="81.641468682505405"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hgS-lE-tVM">
@@ -97,7 +127,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P94-Fq-c5u" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hre-fs-JNS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
