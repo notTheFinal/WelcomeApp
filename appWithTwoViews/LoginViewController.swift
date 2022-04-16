@@ -12,7 +12,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")"
+    }
     
     @IBAction func forgotUserName(_ sender: UIButton) {
         let alert = UIAlertController(title: "Забыли имя?", message: "Ваше имя - root", preferredStyle: .alert)

@@ -9,6 +9,10 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var welcomeUserLabel: UILabel!
+    var welcomeUserName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,9 @@ class WelcomeViewController: UIViewController {
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        // Приветствуем юзера по имени из предыдущего view
+        welcomeUserLabel.text = welcomeUserName
     }
 
 
