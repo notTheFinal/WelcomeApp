@@ -12,10 +12,25 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")"
     }
+    
+    @IBAction func logInBtn() {
+        guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
+            let alert = UIAlertController(title: "Ошибка!", message: "Вы ввели неверное имя или пароль!", preferredStyle: .alert)
+            let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okBtn)
+            
+            present(alert, animated: true, completion: nil)
+            return
+        }
+        performSegue(withIdentifier: "logToWelcome", sender: nil)
+    }
+    
     
     @IBAction func forgotUserName(_ sender: UIButton) {
         let alert = UIAlertController(title: "Забыли имя?", message: "Ваше имя - root", preferredStyle: .alert)
@@ -26,12 +41,18 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotPasswordButton() {
-        let alert = UIAlertController(title: "Забыли пароль?", message: "Ваш пароль был скопирован в буфер обмена", preferredStyle: .alert)
+        let messageForAlert: String
+        if let userPass = dictUsersFromDataBase[userNameTF.text ?? ""] {
+            UIPasteboard.general.string = userPass
+            messageForAlert = "Ваш пароль был скопирован в буфер обмена"
+        } else {
+            messageForAlert = "Введите верное имя пользователя"
+        }
+        let alert = UIAlertController(title: "Забыли пароль?", message: messageForAlert, preferredStyle: .alert)
         let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okBtn)
         
-        present(alert, animated: true, completion: nil)
         
-        UIPasteboard.general.string = "root"
+        present(alert, animated: true, completion: nil)
     }
 }

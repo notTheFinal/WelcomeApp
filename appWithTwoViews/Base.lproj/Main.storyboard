@@ -36,7 +36,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="MZ1-tQ-RXi" kind="show" id="Unc-pk-H3R"/>
+                                            <action selector="logInBtn" destination="aPc-Bo-h87" eventType="touchUpInside" id="b7h-0s-XRQ"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="USY-hQ-NUL">
@@ -83,6 +83,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="226-lg-fbq" id="scB-Kp-Yvm"/>
                         <outlet property="userNameTF" destination="x34-Ej-W7x" id="2qg-XX-C60"/>
+                        <segue destination="MZ1-tQ-RXi" kind="show" identifier="logToWelcome" id="kxf-5e-xLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRX-51-Utw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
