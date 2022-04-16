@@ -35,6 +35,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Log In">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="MZ1-tQ-RXi" kind="show" id="Unc-pk-H3R"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="USY-hQ-NUL">
                                         <rect key="frame" x="6.3333333333333428" y="204.33333333333331" width="356.66666666666663" height="31"/>
@@ -45,6 +48,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotUserNameButton" destination="aPc-Bo-h87" eventType="touchUpInside" id="RKL-5Y-eNK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9e-Ry-SVj">
                                                 <rect key="frame" x="207.33333333333331" y="0.0" width="149.33333333333331" height="31"/>
@@ -52,6 +58,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotPasswordButton" destination="aPc-Bo-h87" eventType="touchUpInside" id="yHN-6v-UPa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -71,6 +80,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xwI-c1-T7p"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="226-lg-fbq" id="scB-Kp-Yvm"/>
+                        <outlet property="userNameTF" destination="x34-Ej-W7x" id="2qg-XX-C60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRX-51-Utw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,22 +104,25 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButton" destination="MZ1-tQ-RXi" eventType="touchUpInside" id="buI-ro-6yg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-0M-IOs">
-                                <rect key="frame" x="105" y="184" width="218" height="36"/>
+                                <rect key="frame" x="105" y="280" width="218" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="48" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-8G-JNi">
-                                <rect key="frame" x="162" y="264" width="104" height="115"/>
+                                <rect key="frame" x="162" y="360" width="104" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RzJ-Ev-WMe"/>
-                        <color key="backgroundColor" red="0.43125003576278687" green="0.48700982332229614" blue="0.90588241815567017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44705885648727417" green="0.63284319639205933" blue="0.90588241815567017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tz7-US-K0h" firstAttribute="centerX" secondItem="RzJ-Ev-WMe" secondAttribute="centerX" id="74K-uA-Ui8"/>
                             <constraint firstItem="RzJ-Ev-WMe" firstAttribute="bottom" secondItem="Tz7-US-K0h" secondAttribute="bottom" constant="187" id="Uyj-Qp-jJT"/>
@@ -116,6 +132,7 @@
                             <constraint firstItem="kZ1-0M-IOs" firstAttribute="top" secondItem="RzJ-Ev-WMe" secondAttribute="top" constant="140" id="yZL-fQ-jig"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hMI-Wc-hPo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bX-6Z-ycj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
