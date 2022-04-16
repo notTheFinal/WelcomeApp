@@ -12,6 +12,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // градиентный фон
         let color1 = UIColor(red: 39 / 255, green: 66 / 255, blue: 155 / 255, alpha: 1).cgColor
         let color2 = UIColor(red: 56 / 255, green: 180 / 255, blue: 66 / 255, alpha: 1).cgColor
         
