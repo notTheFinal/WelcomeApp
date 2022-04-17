@@ -12,14 +12,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
+    private let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
     
     override func viewDidLoad() {
         userNameTF.delegate = self
         passwordTF.delegate = self
     }
     
-    func showAlert(_ title: String, _ message: String) {
+    private func showAlert(_ title: String, _ message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okBtn)
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")"
+        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")!"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
