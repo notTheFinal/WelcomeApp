@@ -19,6 +19,10 @@ class LoginViewController: UIViewController {
         welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")"
     }
     
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super.touchesBegan(touches, with: event)
+//    }
+    
     @IBAction func logInBtn() {
         guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
             let alert = UIAlertController(title: "Ошибка!", message: "Вы ввели неверное имя или пароль!", preferredStyle: .alert)
@@ -54,5 +58,10 @@ class LoginViewController: UIViewController {
         
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 }
