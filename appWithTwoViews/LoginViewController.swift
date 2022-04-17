@@ -7,12 +7,36 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
     let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
+    
+    override func viewDidLoad() {
+        userNameTF.delegate = self
+        passwordTF.delegate = self
+    }
+    
+    func showAlert(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okBtn)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case userNameTF:
+            passwordTF.becomeFirstResponder()
+            break
+        default:
+            logInBtn()
+        }
+        return true
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -28,11 +52,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func logInBtn() {
         guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
-            let alert = UIAlertController(title: "Ошибка!", message: "Вы ввели неверное имя или пароль!", preferredStyle: .alert)
-            let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(okBtn)
-            
-            present(alert, animated: true, completion: nil)
+            showAlert("Ошибка!", "Вы ввели неверное имя или пароль!")
+            passwordTF.text = ""
             return
         }
         performSegue(withIdentifier: "logToWelcome", sender: nil)
@@ -40,11 +61,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func forgotUserName(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Забыли имя?", message: "Ваше имя - root", preferredStyle: .alert)
-        let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(okBtn)
-        
-        present(alert, animated: true, completion: nil)
+        showAlert("Забыли имя?", "Ваше имя - root")
     }
     
     @IBAction func forgotPasswordButton() {
@@ -55,12 +72,7 @@ class LoginViewController: UIViewController {
         } else {
             messageForAlert = "Введите верное имя пользователя"
         }
-        let alert = UIAlertController(title: "Забыли пароль?", message: messageForAlert, preferredStyle: .alert)
-        let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(okBtn)
-        
-        
-        present(alert, animated: true, completion: nil)
+        showAlert("Забыли пароль?", messageForAlert)
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
