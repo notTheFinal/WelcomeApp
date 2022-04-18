@@ -19,6 +19,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTF.delegate = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")!"
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (touches.first) != nil {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
+    }
+    
     private func showAlert(_ title: String, _ message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -37,18 +49,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")!"
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if (touches.first) != nil {
-            view.endEditing(true)
-        }
-        super.touchesBegan(touches, with: event)
-    }
+
     
     @IBAction func logInBtn() {
         guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
@@ -58,7 +59,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         performSegue(withIdentifier: "logToWelcome", sender: nil)
     }
-    
     
     @IBAction func forgotUserName(_ sender: UIButton) {
         showAlert("Забыли имя?", "Ваше имя - root")
