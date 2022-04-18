@@ -36,7 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let okBtn = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okBtn)
         
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
