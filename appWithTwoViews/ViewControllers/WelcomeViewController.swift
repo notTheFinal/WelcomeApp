@@ -28,7 +28,7 @@ class WelcomeViewController: UIViewController {
         self.view.layer.insertSublayer(gradientLayer, at: 0)
         
         // Приветствуем юзера по имени из предыдущего view
-        welcomeUserLabel.text = welcomeUserName
+        welcomeUserLabel.text = "Welcome, \(welcomeUserName ?? "user")!"
     }
 
 

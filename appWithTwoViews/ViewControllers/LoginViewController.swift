@@ -21,14 +21,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUserName = "Welcome, \(userNameTF.text ?? "user")!"
+        welcomeVC.welcomeUserName = userNameTF.text ?? "user"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        if (touches.first) != nil {
-            view.endEditing(true)
-        }
+        view.endEditing(true)
     }
     
     private func showAlert(_ title: String, _ message: String) {
