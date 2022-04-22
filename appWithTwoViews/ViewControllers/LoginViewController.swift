@@ -12,7 +12,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    private let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
+//    private let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
+    private let user = User.getInfoAboutMe()
     
     override func viewDidLoad() {
         userNameTF.delegate = self
@@ -23,7 +24,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let tabBarController = segue.destination as! UITabBarController
         guard let viewControllers = tabBarController.viewControllers else { return }
         for viewController in viewControllers {
-            
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.welcomeUserName = user.person.fullName()
+            } else if let educationVC = viewController as? EducationViewController {
+                
+            } else if let skillsVC = viewController as? SkillsViewController {
+                
+            } else if let achievementsVC = viewController as? AchievementsViewController {
+                
+            }
         }
     }
     
@@ -53,7 +62,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBAction func logInBtn() {
-        guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
+//        guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
+        guard passwordTF.text ?? "" == user.password else {
             showAlert("Ошибка!", "Вы ввели неверное имя или пароль!")
             passwordTF.text = ""
             return
@@ -67,8 +77,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func forgotPasswordButton() {
         let messageForAlert: String
-        if let userPass = dictUsersFromDataBase[userNameTF.text ?? ""] {
-            UIPasteboard.general.string = userPass
+        if userNameTF.text == user.login {
+            UIPasteboard.general.string = user.password
             messageForAlert = "Ваш пароль был скопирован в буфер обмена"
         } else {
             messageForAlert = "Введите верное имя пользователя"

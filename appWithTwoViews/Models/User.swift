@@ -68,6 +68,10 @@ struct Person {
     let hardSkills: [String]
     let softSkills: [String]
     let achievements: [Achievement]
+    
+    func fullName() -> String {
+        "\(name) \(surname)"
+    }
 }
 
 struct Achievement {
