@@ -39,6 +39,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9185E3528128768004EBF2F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD2F112802D9AE00C27FCD /* Main.storyboard */,
+				A9AD2F162802D9B000C27FCD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A9185E362812879A004EBF2F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */,
+				A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9185E37281287D4004EBF2F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */,
+				A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */,
+				A9AD2F192802D9B000C27FCD /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9185E38281287DB004EBF2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD2F142802D9B000C27FCD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A9AD2EFF2802D9AE00C27FCD = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +94,10 @@
 		A9AD2F0A2802D9AE00C27FCD /* appWithTwoViews */ = {
 			isa = PBXGroup;
 			children = (
-				A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */,
-				A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */,
-				A9AD2F112802D9AE00C27FCD /* Main.storyboard */,
-				A9AD2F142802D9B000C27FCD /* Assets.xcassets */,
-				A9AD2F162802D9B000C27FCD /* LaunchScreen.storyboard */,
-				A9AD2F192802D9B000C27FCD /* Info.plist */,
-				A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */,
-				A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */,
+				A9185E37281287D4004EBF2F /* App */,
+				A9185E3528128768004EBF2F /* Storyboards */,
+				A9185E38281287DB004EBF2F /* Resources */,
+				A9185E362812879A004EBF2F /* ViewControllers */,
 			);
 			path = appWithTwoViews;
 			sourceTree = "<group>";
@@ -295,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W9HG2VGZDV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = appWithTwoViews/Info.plist;
+				INFOPLIST_FILE = appWithTwoViews/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W9HG2VGZDV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = appWithTwoViews/Info.plist;
+				INFOPLIST_FILE = appWithTwoViews/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
