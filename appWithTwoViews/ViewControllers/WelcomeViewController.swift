@@ -16,6 +16,13 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        makeGradientBackground()
+        
+        // Приветствуем юзера по имени из предыдущего view
+        welcomeUserLabel.text = "Welcome, \(welcomeUserName ?? "user")!"
+    }
+
+    private func makeGradientBackground() {
         // градиентный фон
         let color1 = UIColor(red: 39 / 255, green: 66 / 255, blue: 155 / 255, alpha: 1).cgColor
         let color2 = UIColor(red: 56 / 255, green: 180 / 255, blue: 66 / 255, alpha: 1).cgColor
@@ -26,11 +33,7 @@ class WelcomeViewController: UIViewController {
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         self.view.layer.insertSublayer(gradientLayer, at: 0)
-        
-        // Приветствуем юзера по имени из предыдущего view
-        welcomeUserLabel.text = "Welcome, \(welcomeUserName ?? "user")!"
     }
-
 
 
 }
