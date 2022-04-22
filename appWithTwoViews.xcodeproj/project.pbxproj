@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A9A7758D28128E260096D84C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7758C28128E260096D84C /* User.swift */; };
+		A9A7758F2812D3850096D84C /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7758E2812D3850096D84C /* EducationViewController.swift */; };
+		A9A775912812D39F0096D84C /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A775902812D39F0096D84C /* SkillsViewController.swift */; };
+		A9A775932812D3C20096D84C /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A775922812D3C20096D84C /* AchievementsViewController.swift */; };
 		A9AD2F0C2802D9AE00C27FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */; };
 		A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */; };
 		A9AD2F132802D9AE00C27FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD2F112802D9AE00C27FCD /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		A9A7758C28128E260096D84C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9A7758E2812D3850096D84C /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		A9A775902812D39F0096D84C /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		A9A775922812D3C20096D84C /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		A9AD2F082802D9AE00C27FCD /* appWithTwoViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appWithTwoViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 			children = (
 				A9AD2F1F2802DDB800C27FCD /* LoginViewController.swift */,
 				A9AD2F212802DDC900C27FCD /* WelcomeViewController.swift */,
+				A9A7758E2812D3850096D84C /* EducationViewController.swift */,
+				A9A775902812D39F0096D84C /* SkillsViewController.swift */,
+				A9A775922812D3C20096D84C /* AchievementsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,8 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AD2F202802DDB800C27FCD /* LoginViewController.swift in Sources */,
+				A9A7758F2812D3850096D84C /* EducationViewController.swift in Sources */,
 				A9AD2F222802DDC900C27FCD /* WelcomeViewController.swift in Sources */,
 				A9AD2F0C2802D9AE00C27FCD /* AppDelegate.swift in Sources */,
+				A9A775932812D3C20096D84C /* AchievementsViewController.swift in Sources */,
+				A9A775912812D39F0096D84C /* SkillsViewController.swift in Sources */,
 				A9A7758D28128E260096D84C /* User.swift in Sources */,
 				A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */,
 			);
