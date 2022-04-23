@@ -59,7 +59,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-
     
     @IBAction func logInBtn() {
         guard passwordTF.text ?? "" == user.password else {

@@ -11,11 +11,19 @@ class EducationViewController: UIViewController {
 
     var educationList: [Education]!
     
+    @IBOutlet weak var educationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        showEducation()
     }
     
+    private func showEducation() {
+        for education in educationList {
+            educationLabel.text?.append("🎓\(education.year)\n")
+            educationLabel.text?.append("\(education.title)\n")
+        }
+    }
 
 }
