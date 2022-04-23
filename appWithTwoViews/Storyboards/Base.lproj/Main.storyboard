@@ -99,9 +99,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-sI-y2C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-sI-y2C">
                                 <rect key="frame" x="16" y="30" width="343" height="558"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -109,13 +109,16 @@
                         <viewLayoutGuide key="safeArea" id="A8T-Fz-8pg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TaG-sI-y2C" firstAttribute="leading" relation="lessThanOrEqual" secondItem="A8T-Fz-8pg" secondAttribute="leading" constant="16" id="9Ua-5O-jPk"/>
+                            <constraint firstItem="TaG-sI-y2C" firstAttribute="leading" secondItem="A8T-Fz-8pg" secondAttribute="leading" constant="16" id="9Ua-5O-jPk"/>
                             <constraint firstItem="A8T-Fz-8pg" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="TaG-sI-y2C" secondAttribute="bottom" constant="30" id="NZg-y5-23y"/>
-                            <constraint firstItem="A8T-Fz-8pg" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="TaG-sI-y2C" secondAttribute="trailing" constant="16" id="bB5-iV-Xl3"/>
+                            <constraint firstItem="A8T-Fz-8pg" firstAttribute="trailing" secondItem="TaG-sI-y2C" secondAttribute="trailing" constant="16" id="bB5-iV-Xl3"/>
                             <constraint firstItem="TaG-sI-y2C" firstAttribute="top" relation="lessThanOrEqual" secondItem="A8T-Fz-8pg" secondAttribute="top" constant="30" id="sIE-X0-Kkh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Skills" image="person.3.fill" catalog="system" id="qQO-5G-BJV"/>
+                    <connections>
+                        <outlet property="skillsLabel" destination="TaG-sI-y2C" id="cEU-be-8rw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXU-Kw-DHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-aN-7jE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-aN-7jE">
                                 <rect key="frame" x="16" y="30" width="343" height="558"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -139,9 +142,9 @@
                         <viewLayoutGuide key="safeArea" id="cmJ-VQ-ogP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AJx-aN-7jE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="cmJ-VQ-ogP" secondAttribute="leading" constant="16" id="Fzf-Lh-RbU"/>
+                            <constraint firstItem="AJx-aN-7jE" firstAttribute="leading" secondItem="cmJ-VQ-ogP" secondAttribute="leading" constant="16" id="Fzf-Lh-RbU"/>
                             <constraint firstItem="AJx-aN-7jE" firstAttribute="top" relation="lessThanOrEqual" secondItem="cmJ-VQ-ogP" secondAttribute="top" constant="30" id="h8m-fA-NB0"/>
-                            <constraint firstItem="cmJ-VQ-ogP" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AJx-aN-7jE" secondAttribute="trailing" constant="16" id="i0X-25-vZl"/>
+                            <constraint firstItem="cmJ-VQ-ogP" firstAttribute="trailing" secondItem="AJx-aN-7jE" secondAttribute="trailing" constant="16" id="i0X-25-vZl"/>
                             <constraint firstItem="cmJ-VQ-ogP" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="AJx-aN-7jE" secondAttribute="bottom" constant="30" id="jK2-Rc-UWo"/>
                         </constraints>
                     </view>
@@ -218,7 +221,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mas-fH-DYq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mas-fH-DYq">
                                 <rect key="frame" x="16" y="30" width="343" height="558"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -228,10 +231,10 @@
                         <viewLayoutGuide key="safeArea" id="utk-T8-OZm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="utk-T8-OZm" firstAttribute="bottom" secondItem="mas-fH-DYq" secondAttribute="bottom" constant="30" id="7cG-km-jkl"/>
+                            <constraint firstItem="utk-T8-OZm" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="mas-fH-DYq" secondAttribute="bottom" constant="30" id="7cG-km-jkl"/>
                             <constraint firstItem="mas-fH-DYq" firstAttribute="leading" secondItem="utk-T8-OZm" secondAttribute="leading" constant="16" id="DFy-37-tRu"/>
                             <constraint firstItem="utk-T8-OZm" firstAttribute="trailing" secondItem="mas-fH-DYq" secondAttribute="trailing" constant="16" id="PoK-BR-xjb"/>
-                            <constraint firstItem="mas-fH-DYq" firstAttribute="top" secondItem="utk-T8-OZm" secondAttribute="top" constant="30" id="Sbr-FQ-JqV"/>
+                            <constraint firstItem="mas-fH-DYq" firstAttribute="top" relation="lessThanOrEqual" secondItem="utk-T8-OZm" secondAttribute="top" constant="30" id="Sbr-FQ-JqV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Education" id="ZdE-ff-7gn">

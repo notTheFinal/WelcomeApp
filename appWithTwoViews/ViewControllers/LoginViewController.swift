@@ -12,7 +12,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-//    private let dictUsersFromDataBase = ["root": "root", "admin": "admin", "log": "pass"]
     private let user = User.getInfoAboutMe()
     
     override func viewDidLoad() {
@@ -63,7 +62,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBAction func logInBtn() {
-//        guard passwordTF.text ?? "" == dictUsersFromDataBase[userNameTF.text ?? ""] else {
         guard passwordTF.text ?? "" == user.password else {
             showAlert("Ошибка!", "Вы ввели неверное имя или пароль!")
             passwordTF.text = ""
