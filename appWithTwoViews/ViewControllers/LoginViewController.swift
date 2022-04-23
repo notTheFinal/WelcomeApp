@@ -27,11 +27,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.welcomeUserName = user.person.fullName()
             } else if let educationVC = viewController as? EducationViewController {
-                
+                educationVC.educationList = user.person.education
             } else if let skillsVC = viewController as? SkillsViewController {
-                
+                skillsVC.hardSkillsList = user.person.hardSkills
+                skillsVC.softSkillsList = user.person.softSkills
             } else if let achievementsVC = viewController as? AchievementsViewController {
-                
+                achievementsVC.achievementsList = user.person.achievements
             }
         }
     }

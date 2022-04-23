@@ -94,7 +94,7 @@
         <!--Skills-->
         <scene sceneID="gLk-mI-OAg">
             <objects>
-                <viewController id="mfl-wd-dGj" sceneMemberID="viewController">
+                <viewController id="mfl-wd-dGj" customClass="SkillsViewController" customModule="appWithTwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eX0-bx-0Df">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
         <!--Achievements-->
         <scene sceneID="GNg-cS-uHk">
             <objects>
-                <viewController id="sM0-M2-MK1" sceneMemberID="viewController">
+                <viewController id="sM0-M2-MK1" customClass="AchievementsViewController" customModule="appWithTwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FfA-j0-gHa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-0M-IOs">
-                                <rect key="frame" x="55" y="140" width="264" height="36"/>
+                                <rect key="frame" x="55.5" y="140" width="264" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="264" id="eYE-DW-fzu"/>
                                 </constraints>
@@ -213,7 +213,7 @@
         <!--Education-->
         <scene sceneID="FFr-76-Rqh">
             <objects>
-                <viewController id="4We-XH-lD0" sceneMemberID="viewController">
+                <viewController id="4We-XH-lD0" customClass="EducationViewController" customModule="appWithTwoViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="56B-sz-EVA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

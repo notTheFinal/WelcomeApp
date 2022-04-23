@@ -9,6 +9,8 @@ import UIKit
 
 class AchievementsViewController: UIViewController {
 
+    var achievementsList: [Achievement]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
