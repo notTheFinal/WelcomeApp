@@ -134,7 +134,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-aN-7jE">
                                 <rect key="frame" x="16" y="30" width="343" height="558"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -149,6 +149,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Achievements" image="flag.2.crossed.fill" catalog="system" id="ohu-lc-LfV"/>
+                    <connections>
+                        <outlet property="achievementsLabel" destination="AJx-aN-7jE" id="Og4-kp-KEr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3r2-HL-ukS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
