@@ -11,6 +11,7 @@
 		A9A7758F2812D3850096D84C /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7758E2812D3850096D84C /* EducationViewController.swift */; };
 		A9A775912812D39F0096D84C /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A775902812D39F0096D84C /* SkillsViewController.swift */; };
 		A9A775932812D3C20096D84C /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A775922812D3C20096D84C /* AchievementsViewController.swift */; };
+		A9A775962813EDDF0096D84C /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A775952813EDDF0096D84C /* Gradient.swift */; };
 		A9AD2F0C2802D9AE00C27FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */; };
 		A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */; };
 		A9AD2F132802D9AE00C27FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AD2F112802D9AE00C27FCD /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		A9A7758E2812D3850096D84C /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 		A9A775902812D39F0096D84C /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		A9A775922812D3C20096D84C /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		A9A775952813EDDF0096D84C /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		A9AD2F082802D9AE00C27FCD /* appWithTwoViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appWithTwoViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AD2F0B2802D9AE00C27FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AD2F0D2802D9AE00C27FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A9A775942813EDC50096D84C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				A9A775952813EDDF0096D84C /* Gradient.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		A9AD2EFF2802D9AE00C27FCD = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		A9AD2F0A2802D9AE00C27FCD /* appWithTwoViews */ = {
 			isa = PBXGroup;
 			children = (
+				A9A775942813EDC50096D84C /* Functions */,
 				A9A7758B28128DF70096D84C /* Models */,
 				A9185E37281287D4004EBF2F /* App */,
 				A9185E3528128768004EBF2F /* Storyboards */,
@@ -201,6 +212,7 @@
 				A9A775912812D39F0096D84C /* SkillsViewController.swift in Sources */,
 				A9A7758D28128E260096D84C /* User.swift in Sources */,
 				A9AD2F0E2802D9AE00C27FCD /* SceneDelegate.swift in Sources */,
+				A9A775962813EDDF0096D84C /* Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

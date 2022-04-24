@@ -14,7 +14,7 @@ struct User {
         User(login: "root",
              password: "root",
              person:
-                Person(name: "Alexandr",
+                Person(name: "Alexander",
                        surname: "Baranchuk",
                        dateOfBirth: "28.11.2000",
                        education: [
